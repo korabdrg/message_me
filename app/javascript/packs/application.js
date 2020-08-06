@@ -20,4 +20,14 @@ require("semantic-ui")
 
 $(document).on('turbolinks:load', function(){
     $('.ui.dropdown.item').dropdown();
+
+    $('.message .close').on('click', function() {
+    $(this)
+      .closest('.message')
+      .transition('fade')
+    ;
+  })
+;
+
 })
+
